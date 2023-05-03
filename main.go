@@ -34,7 +34,7 @@ func buildCreditNote(m pdf.Maroto) {
 	m.Row(20, func() {
 		m.SetBorder(true)
 		m.Col(12, func() {
-			err := m.FileImage("images/rummy.png", props.Rect{
+			err := m.FileImage("images/xyz.png", props.Rect{
 				Center:  false,
 				Left:    5,
 				Percent: 80,
@@ -45,7 +45,7 @@ func buildCreditNote(m pdf.Maroto) {
 				fmt.Println("Image file was not loaded 😱 - ", err)
 			}
 
-			m.Text("Junglee Games", props.Text{
+			m.Text("XYZ", props.Text{
 				Top:   3,
 				Style: consts.Bold,
 				Align: consts.Center,
